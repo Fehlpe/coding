@@ -44,6 +44,11 @@ button.reset {
     bottom: 26%;
 }
 
+button.revert {
+    position: absolute;
+    bottom: 19%;
+}
+
 button:hover {
     color: #fff;
     border-color: #f3e600;

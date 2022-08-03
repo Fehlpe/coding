@@ -1,6 +1,6 @@
 let check;
-let numero = 1;
-let contadorResume=0, contadorStop=0, contadorStart=0;
+let numero = 0;
+let contadorResume=0, contadorStop=0, contadorStart=0,contadorRevert=0;
 
 function contador() {
     if(contadorStart<1){
@@ -20,7 +20,7 @@ function timer() {
 
 function start() {
     document.getElementById('count').innerText=numero;
-    return numero++;
+    numero++;
 }
 
 function stop() {
@@ -45,4 +45,25 @@ function reset(){
     document.getElementById('count').innerText=0;
     contadorStart = 0;
     numero=1;
+}
+
+function revert() {
+    contadorRevert++;
+    stop();
+    if(contadorResume<=contadorStop){
+        check = false;
+        if(!check){
+            check = setInterval(revertTimer, 1000);
+        } 
+    } 
+}
+
+function revertTimer() {
+    if(contadorRevert%2==0){
+        document.getElementById('count').innerText=numero;
+        numero++;
+    } else {
+        numero--;
+        document.getElementById('count').innerText=numero;    
+    }
 }
