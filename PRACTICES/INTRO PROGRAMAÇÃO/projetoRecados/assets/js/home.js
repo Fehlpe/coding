@@ -5,6 +5,7 @@ const formRecado = document.querySelector("#form-novo-recado");
 const inputNovoRecado = document.querySelector("#novo-recado-input");
 const listaElementos = document.querySelector("#recados"); 
 const botaoLogout = document.getElementById("logout");
+const tituloComNome = document.getElementById("titulo-home");
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let user = listaUsuarios.find(
         (valor) => valor.email == logado);
     
+    tituloComNome.innerHTML = `Olá, <span>${user.username}</span> `;    
+
     user.recados.forEach((recado) => montarRecado(recado))
 
 })
