@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY - HTML</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            background-color: antiquewhite;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow-x: hidden;
+            justify-content: space-around;
+        }
+
+        #verde {
+            align-self: center;
+            height: 150px;
+            width: 80px;
+            background-color: green;
+        }
+
+        #amarelo {
+            height: 100px;
+            width: 130px;
+            background-color: yellow;
+        }
+
+        #vermelho {
+            height: 150px;
+            width: 100px;
+            background-color: red;
+        }
+
+        #azul {
+            height: 150px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>display: flex</h1>
+
+    <div class="container">
+        <div id="verde">1</div>
+        <div id="amarelo">2</div>
+        <div id="vermelho">3</div>
+        <div id="azul">4</div>
+    </div>
+
+</body>
+
+</html>
