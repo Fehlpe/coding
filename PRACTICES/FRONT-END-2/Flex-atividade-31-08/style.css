@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    gap: 70vw;
+}
+
+#laranja{
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+    border-radius: 50%;
+    border: 3px solid #222;
+}
+
+#azul {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid #222;
+}
