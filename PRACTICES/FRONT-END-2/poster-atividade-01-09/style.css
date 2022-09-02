@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
     overflow: hidden;
 }
 
@@ -15,7 +18,7 @@
 }
 
 #strange-cartoon{
-    transform: translateY(30%);
+    transform: translateY(20%);
     z-index: 2;
     height: 70vh;
     width: 50vw;
@@ -27,7 +30,7 @@
 }
 
 #titulo-cartoon{
-    transform: translateY(-70%);
+    transform: translateY(-80%);
     width: 80vw;
     height: 65vh;
     mix-blend-mode: soft-light;
