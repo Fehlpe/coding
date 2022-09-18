@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --yellow-color: #fcee09; 
+    --red-color: #ff003c;
+    --black-color: #050a0e;
+    --blue-color: #00f0ff;
+    --white-color: #fafafa;
+}
+
+body{
+    background-image: linear-gradient(90deg, #ec1b1b, #ff003c);
+}
+
+.content{
+    height: 100vh;
+}
+
+h1, h1 span{
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--white-color);
+    font-family: 'Tomorrow', sans-serif;
+}
+
+h1 span{
+    color: var(--black-color);
+}
+
+form p, form a{
+  font-size: 1.2rem;
+}
+
+form a{
+  color: var(--red-color);
+  text-decoration: none;
+}
+
