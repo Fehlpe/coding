@@ -13,45 +13,53 @@
 </head>
 
 <body>
+    <main>
+        <div class="container-fluid vh-100">
+            <div class="col-md-12">
+                <div id="header" class="px-lg-5 pt-lg-3 d-flex justify-content-between flex-row">
+                    <h1 id="titulo-home">toma</h1>
+                    <button id="logout">LOGOUT</button>
+                </div>
 
-    <div class="container-fluid">
-        <div class="col-md-12">
-            <div id="header" class="px-lg-5 pt-lg-3 d-flex justify-content-between flex-row mb-3 mt-3">
-                <h1 id="titulo-home">toma</h1>
-                <button id="logout">LOGOUT</button>
-            </div>
+                <div id="form-novo-recado" class="px-lg-5 d-flex flex-wrap flex-row mt-3 mb-3">
+                    <input required type="text" placeholder="Digite o título do seu novo recado..."
+                        id="titulo-novo-recado-input" />
+                    <input required type="text" placeholder="Digite a descrição do seu novo recado..."
+                        id="novo-recado-input" />
+                    <button id="novo-recado-submit" class="btn btn-home btn--secondary">
+                        <span class="btn__content">NOVO RECADO</span>
+                        <span class="btn__glitch"></span>
+                        <span class="btn__label">flp</span>
+                    </button>
+                </div>
 
-            <div id="formNovo" class="px-lg-5 d-flex flex-wrap flex-row mb-3">
-                <input required type="text" placeholder="Digite o título do seu novo recado..."
-                    id="titulo-novo-recado-input" maxlength="28" />
-                <input required type="text" placeholder="Digite a descrição do seu novo recado..."
-                    id="novo-recado-input" maxlength="110" />
-                <button id="novo-recado-submit">NOVO RECADO</button>
-            </div>
+                <div class="lista-recados d-flex flex-wrap flex-row mb-3 mt-4">
+                    <h2 id="cabecalho-titulo">Título</h2>
+                    <h2 id="cabecalho-descricao">Descrição</h2>
 
-            <div class="lista-recados d-flex flex-wrap flex-row mb-3 mt-4">
-                <h2 id="cabecalho-titulo">Título</h2>
-                <h2 id="cabecalho-descricao">Descrição</h2>
+                    <div id="recados" class="d-flex flex-wrap flex-row">
+                        <div class="recado p-2 mb-2 mt-3 d-flex flex-row">
+                            <div class="conteudo-recado d-flex flex-row">
+                                <textarea class="titulo-recado" oninput="auto_height(this)"
+                                    readonly="readonly"></textarea>
 
-                <div id="recados" class="d-flex flex-row">
-                    <div class="recado d-flex flex-row">
-                        <div class="conteudo-recado d-flex flex-row">
-                            <input class="titulo-recado" type="text" readonly="readonly">
-                            <input class="texto-recado" type="text" readonly="readonly">
-                        </div>
-                        <div class="botoes-recado d-flex justify-content-between flex-row">
-                            <button class="editar-recado">EDITAR</button>
-                            <button class="deletar-recado">DELETAR</button>
+                                <textarea class="texto-recado" oninput="auto_height(this)"
+                                    readonly="readonly"></textarea>
+
+                            </div>
+                            <div class="botoes-recado d-flex justify-content-between flex-row">
+                                <button class="editar-recado">EDITAR</button>
+                                <button class="deletar-recado">DELETAR</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
+    </main>
 
-
-
+    <script src="dist/home.js"></script>
 </body>
 
 </html>
