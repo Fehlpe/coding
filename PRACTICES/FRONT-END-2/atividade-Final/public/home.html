@@ -5,11 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/btnGlitch.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <body>
-    <p>aaaaaaaaaaaa</p>
+
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <div id="header" class="px-lg-5 pt-lg-3 d-flex justify-content-between flex-row mb-3 mt-3">
+                <h1 id="titulo-home">toma</h1>
+                <button id="logout">LOGOUT</button>
+            </div>
+
+            <div id="formNovo" class="px-lg-5 d-flex flex-wrap flex-row mb-3">
+                <input required type="text" placeholder="Digite o título do seu novo recado..."
+                    id="titulo-novo-recado-input" maxlength="28" />
+                <input required type="text" placeholder="Digite a descrição do seu novo recado..."
+                    id="novo-recado-input" maxlength="110" />
+                <button id="novo-recado-submit">NOVO RECADO</button>
+            </div>
+
+            <div class="lista-recados d-flex flex-wrap flex-row mb-3 mt-4">
+                <h2 id="cabecalho-titulo">Título</h2>
+                <h2 id="cabecalho-descricao">Descrição</h2>
+
+                <div id="recados" class="d-flex flex-row">
+                    <div class="recado d-flex flex-row">
+                        <div class="conteudo-recado d-flex flex-row">
+                            <input class="titulo-recado" type="text" readonly="readonly">
+                            <input class="texto-recado" type="text" readonly="readonly">
+                        </div>
+                        <div class="botoes-recado d-flex justify-content-between flex-row">
+                            <button class="editar-recado">EDITAR</button>
+                            <button class="deletar-recado">DELETAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
