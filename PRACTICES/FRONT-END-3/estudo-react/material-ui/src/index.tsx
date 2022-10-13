@@ -1,16 +1,15 @@
+import { Home } from '@mui/icons-material';
+import { CssBaseline } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Teste from './components/Teste';
-import './index.css';
-
+import MeuHome from './pages/home/Home';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Teste />
+    <CssBaseline/>
+    <MeuHome/>
   </React.StrictMode>
 );
-
-
