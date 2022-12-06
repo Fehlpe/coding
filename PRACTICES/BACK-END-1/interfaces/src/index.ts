@@ -111,3 +111,16 @@ interface ValorPedido {
     }
   }
   
+  const result = [{
+    nome: 'Aaron Paul',
+    sexo: 'M',
+    idade: 32
+  }]
+
+  console.log(result.map(m => {
+    return {
+      nome: m.nome,
+      sexo: m.sexo ==='M' ? "Masculino" : 'Feminino',
+      idade: m.idade >= 18 ? "Maior de idade" : "Menor de Idade"
+    }
+  }))
